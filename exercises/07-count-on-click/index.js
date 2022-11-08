@@ -14,4 +14,17 @@ window.increaseCounter = function increaseCounter()
 	counter++;
 	//update the screen with the new value
 	document.getElementById('screen').innerHTML = "The counter value is "+counter;
+  if (counter < 0){
+    document.getElementById("screen").innerHTML = "Oh no... number are negative, please make the number "+counter+" positive!"
+
+  }
+  
+}
+
+window.decreaseCounter = function decreaseCounter(){
+  counter--;
+  document.getElementById("screen").innerHTML = "The counter value is "+counter;
+  if (counter < 0){
+    document.getElementById("screen").innerHTML = "Oh no... number are negative, please make the number "+counter+" positive!"
+  }
 }
