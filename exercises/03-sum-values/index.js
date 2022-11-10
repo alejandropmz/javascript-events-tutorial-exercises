@@ -9,8 +9,11 @@ window.calculateSumListener = function() {
 
   // var stringResult = document.getElementById("resultNumber").value;
   // stringResult.value = result
+
+  var resultPrint = document.getElementById("resultNumber");
+  resultPrint.value = result;
   
-  alert(`Su resultado es ${result}`)
+  //alert(`Su resultado es ${result}`)
 
 	//your code goes here
 };
